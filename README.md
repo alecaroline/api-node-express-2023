@@ -4,6 +4,11 @@
 - Para que serve o NPM?
 - Para que serve o Nodemon?
     Monitora as atualizações do script e restarta o servidor
+- O que é uma API?
+- Para que serve o Framewrok Express?
+
+
+https://github.com/renancavichi/backend-restful-api-node-express
 
 # Comandos
 
