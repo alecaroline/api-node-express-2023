@@ -27,3 +27,7 @@
 - git init
 
 - git remote add origin [url do repositório]
+
+- git add .
+
+- git push
