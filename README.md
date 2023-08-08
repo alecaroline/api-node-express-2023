@@ -1,12 +1,17 @@
 # Tópicos Importantes
 
 - O que é o Node.js?
-- Para que serve o NPM?
+    - 
+- Para que serve o NPM (Node Package Manager)?
+    - 
 - Para que serve o Nodemon?
     Monitora as atualizações do script e restarta o servidor
 - O que é uma API?
 - Para que serve o Framewrok Express?
-
+- nodemon
+    - apenas pacote de desenvolvimento
+- express
+    - pacote ligado ao escopo inteiro do projeto
 
 https://github.com/renancavichi/backend-restful-api-node-express
 
@@ -18,7 +23,9 @@ https://github.com/renancavichi/backend-restful-api-node-express
 
 - npm run [nome do script] (roda o comando definido no script do package.json)
 
-- npm i [nome do pacote] (instalar pacotes)
+- npm i [nome do pacote] (instalar pacotes de Produção)
+
+- npm i nome_do_pacote - D (Dependencia dev)
 
 
 ### GIT
