@@ -14,18 +14,32 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {   
-    // Create
-    res.json({message: "Produto criado con sucesso"})
+    const dados = req.body
+
+    res.json({
+        message: "Produto criado con sucesso",
+        dados: dados
+    })
 })
 
 router.put('/', (req, res) => {   
     // Update
-    res.json({message: "Produto atualizado con sucesso"})
+    const dados = req.body
+
+    res.json({
+        message: "Produto atualizado con sucesso",
+        dados: dados
+    })
 })
 
 router.delete('/', (req, res) => {   
     // Delete
-    res.json({message: "Produto deletado con sucesso"})
+    const dados = req.body
+
+    res.json({
+        message: "Produto deletado con sucesso",
+        dados: dados
+    })
 })
 
 export default router   

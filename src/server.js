@@ -1,10 +1,18 @@
 import express from 'express'
+import bodyParser from 'body-parser'
+
+
 import userRoute from './router/userRouter.js'
 import productRoute from './router/productRoute.js'
+import logger from './middlewares/logger.js'
 
 import {PORT} from './config.js'
 
 const api = express()
+
+//middleware logger
+api.use(logger)
+api.use(bodyParser.json())
 
 // '/': raíz da requisição
 // req: requisição
@@ -18,7 +26,7 @@ api.use('/user', userRoute)
 api.use('/product', productRoute)
 
 
-api.all('*', (req, res) => {   
+api.all('*', logger, (req, res) => {   
     // 
     res.status(404).json({message: "Rota não encontrada!"})
 })

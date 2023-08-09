@@ -21,6 +21,7 @@ através de rotas que trazem informações específicas dadas pela a API (Web)
     >> Modo de testar a API 
 - Postman
     >> Similar ao Thunder
+- O que é o padrão de Projeto Middleware?
 
 - OBS
     >> HTTP: Local
