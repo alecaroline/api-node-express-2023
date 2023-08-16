@@ -1,4 +1,9 @@
 import express from 'express'
+import listUsers from '../controllers/user/listUsers.js'
+import getUser from '../controllers/user/getUser.js'
+import createUser from '../controllers/user/createUser.js'
+import updateUsers from '../controllers/user/updateUser.js'
+import deleteUser from '../controllers/user/deleteUser.js'
 
 const router = express.Router()
 
@@ -12,6 +17,15 @@ router.get('/', (req, res) => {
     ]
     res.json(user)
 })
+
+router.post('/', createUser)
+router.delete('/', deleteUser)
+router.get('/', getUser)
+router.get('/list', listUsers)
+router.put('/', updateUsers)
+
+
+
 
 router.post('/', (req, res) => {   
     // Create
