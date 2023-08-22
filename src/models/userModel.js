@@ -1,5 +1,7 @@
+
 import db from '../database/db.js'
 
+//Regras de negócio e conexão com o banco
 
 
 const list = async () => {
